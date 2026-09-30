@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Consult Partners | Strategic HR Consulting</title>
+  <style>
+    :root {
+      --navy: #0f2744;
+      --navy-light: #1a3a5c;
+      --gold: #c9a227;
+      --gold-light: #e4c65a;
+      --cream: #f8f6f1;
+      --text: #2c3e50;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--cream);
+    }
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .logo { font-size: 1.25rem; font-weight: bold; letter-spacing: 0.02em; }
+    .logo span { color: var(--gold); }
+    nav a {
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-family: system-ui, sans-serif;
+      font-size: 0.9rem;
+    }
+    nav a:hover { color: var(--gold-light); }
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      color: #fff;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 1rem;
+      font-weight: normal;
+    }
+    .hero .tagline {
+      font-size: 1.15rem;
+      max-width: 640px;
+      margin: 0 auto 2rem;
+      opacity: 0.95;
+      font-family: system-ui, sans-serif;
+    }
+    .hero .accent { color: var(--gold-light); }
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 0.85rem 2rem;
+      text-decoration: none;
+      font-family: system-ui, sans-serif;
+      font-weight: 600;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--gold-light); }
+    section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
+    section h2 {
+      text-align: center;
+      color: var(--navy);
+      font-size: 1.75rem;
+      margin-bottom: 2.5rem;
+      font-weight: normal;
+    }
+    section h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      margin: 0.75rem auto 0;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+    .service {
+      background: #fff;
+      border-top: 4px solid var(--gold);
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(15,39,68,0.08);
+    }
+    .service h3 {
+      color: var(--navy);
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+    .service p { font-family: system-ui, sans-serif; font-size: 0.95rem; color: #555; }
+    .cta {
+      background: var(--navy);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+      margin-top: 2rem;
+    }
+    .cta h2 { color: #fff; }
+    .cta h2::after { background: var(--gold); }
+    .cta p {
+      max-width: 520px;
+      margin: 0 auto 1.5rem;
+      font-family: system-ui, sans-serif;
+      opacity: 0.9;
+    }
+    .cta .btn { margin-top: 0.5rem; }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-family: system-ui, sans-serif;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">HR Consult <span>Partners</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>People strategy that drives performance</h1>
+      <p class="tagline">
+        We partner with growing organizations on <span class="accent">talent</span>,
+        <span class="accent">compliance</span>, and <span class="accent">culture</span>—so your HR function becomes a competitive advantage.
+      </p>
+      <a class="btn" href="#contact">Schedule a consultation</a>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="services">
+        <article class="service">
+          <h3>Talent &amp; Acquisition</h3>
+          <p>Workforce planning, employer branding, and hiring processes that attract and retain top performers.</p>
+        </article>
+        <article class="service">
+          <h3>Compliance &amp; Risk</h3>
+          <p>Policy development, audits, and training to keep you aligned with employment law and best practices.</p>
+        </article>
+        <article class="service">
+          <h3>Culture &amp; Engagement</h3>
+          <p>Leadership coaching, DEI initiatives, and engagement programs that strengthen teams and reduce turnover.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <h2>Let's talk about your HR goals</h2>
+      <p>Book a complimentary 30-minute discovery call. We'll listen first, then outline practical next steps.</p>
+      <a class="btn" href="mailto:hello@hrconsultpartners.com">hello@hrconsultpartners.com</a>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 HR Consult Partners. All rights reserved.</footer>
+</body>
+</html>
